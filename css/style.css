@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+    margin: 0;
+    height: auto;
+    color: #333;
+    background: #fcfcfc;
+}
+
+h1 {
+    font-weight: 400;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+h2 {
+    font-weight: 400;
+    color: #888;
+    font-size: 1.2rem;
+    text-transform: capitalize;
+}
+
+
+img {
+    display: block;
+    width: 100%;
+}
+
+main {
+    max-width: 900px;
+    margin: auto;
+    box-shadow: 30px 0px 40px rgba(0, 0, 0, 0.2),
+        -30px 0px 40px rgba(0, 0, 0, 0.2);
+}
+
+#landing {
+    background: #fff;
+}
+
+
+#landing-text {
+    display: flex;
+    flex: 0 1 40vw;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 50vh;
+}
+
+.btn {
+    text-decoration: none;
+    color: #333;
+    border: 1px #ccc solid;
+    display: inline-block;
+    padding: 0.5rem 1.9rem;
+    border-radius: 1.5rem;
+    transition: background 500ms ease-in;
+}
+
+
+.btn:hover {
+    background: #fafafa;
+}
+
+#landing-image {
+    background: url("https://source.unsplash.com/De8wMYoSSBc");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50vh;
+    flex: 0 1 60vw;
+    margin: 0;
+}
+
+#header {
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 0.5rem;
+}
+
+#header h2 {
+    color: #fff;
+    border-left: 1px #fff dotted;
+    border-right: 1px #fff dotted;
+    display: inline-block;
+    padding: 0 1rem;
+}
+
+.caption {
+    text-align: center;
+    padding: 0.5rem;
+}
+
+footer {
+    text-align: center;
+    padding: 3.5rem;
+}
+
+footer h1 {
+    text-transform: capitalize;
+    font-weight: 600;
+    font-size: 3rem;
+}
+
+/* Screen Size 500px and Up */
+@media(min-width:500px) {
+    #landing {
+        display: flex;
+        height: 100%;
+        padding: 0.5rem;
+    }
+
+    #landing-text {
+        height: 100vh;
+    }
+
+    #landing-image {
+        height: 100vh;
+    }
+}
